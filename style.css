@@ -1,0 +1,220 @@
+body{
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    max-width: 960px;
+    margin: auto;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    flex-grow: 1;
+}
+
+h1{
+    color: steelblue;
+    text-shadow: 0 0 1px black;
+}
+.signInBtn{
+    padding: 5px;
+    color: white;
+    background-color: steelblue;
+    text-decoration: none;
+}
+.signInBtn:hover{
+    padding: 5px;
+    color: steelblue;
+    background-color:white ;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.nav{
+
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: steelblue;
+
+    padding: 8px 24px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.navA{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 0 2px black;
+}
+
+nav ul li {
+   margin-right: 16px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+.navA:hover{
+    color: lightblue;
+    text-decoration: underline;
+}
+.active{
+    color: lightblue;
+    text-decoration: underline;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: row-reverse;
+}
+
+.h3{
+    width: 40%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.h4{
+    width: 40%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.p{
+    text-align: right;
+}
+.images{
+    padding: 50px;
+    float: left;
+    margin-right: 5px;
+}
+.mapouter{
+    position: absolute;
+    padding: 180px;
+    margin-right: 620px;
+
+
+}
+#left{
+    width: 50%;
+    float: left;
+}
+#right{
+    width: 40%;
+    text-align: right;
+}
+
+#bigImage{
+    height: 200px;
+    width: 92%;
+}
+#leftImage{
+    height: 100px;
+    width: 30%;
+}
+#centerImage{
+    height: 100px;
+    width: 30%;
+}
+#rightImage{
+    height: 100px;
+    width: 30%;
+}
+.surgery_questions_talk{
+    background-color: aliceblue;
+    width: 30%;
+    border: 1px solid steelblue;
+    border-radius: 10px;
+    padding: 8px;
+    text-align: center;
+}
+
+.surgery_questions_talk .description.collapsed {
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.surgery_questions_talk .toggle {
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+input[type=text], input[type=password], input[type=tel], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+.page{
+    padding: 50px;
+    text-align: center;
+
+}
+.accordion {
+    background-color: #D6EAF1;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: right;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+
+
+}
+
+.activate:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: left;
+  margin-right: 5px;
+
+}
+
+.activate:after {
+  content: "\2212";
+}
+
+.answer {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}

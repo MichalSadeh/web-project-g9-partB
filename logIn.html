@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>EyeVet</title>
+    <link rel="icon" href="images/eyeLogo.jfif" type="images/1.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
+</head>
+<body>
+<header>
+    <img src="./images/eyeLogo.jfif">
+    <h1>מרפאת עיניים וטרינרית</h1>
+</header>
+<nav>
+    <ul class="nav">
+        <li><a class="navA" href="homePage.html">ראשי</a></li>
+        <li><a class="navA" href="about.html">אודות</a></li>
+        <li><a class="navA" href="services.html">שירותי מרפאה</a></li>
+        <li><a class="navA" href="surgery.html">ניתוחים</a></li>
+        <li><a class="navA" href="Customers_talk.html">לקוחות מדברים</a></li>
+        <li><a class="navA" href="questions.html">שאלות ותשובות</a></li>
+        <li><a class="navA" href="askDoctor.html">התייעצות עם רופא</a></li>
+        <li><a class="navA" href="contactAs.html">צור קשר</a></li>
+    </ul>
+</nav>
+<div class="main">
+
+    <div>
+        <h2>התחברות לאתר</h2>
+        <div id="error"></div>
+        <form name="myForm" onsubmit="return validateLogInSingUpForm()" method="post">
+            <div>
+                <label for="email">אימייל</label>
+                <input type="text" id="email" name="email" placeholder="האימייל שלך..">
+                <label for="password">סיסמה</label>
+                <input type="password" id="password" name="userpassword" placeholder="הסיסמה שלך..">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        <h2>
+            לא רשום?
+            <a href="signUp.html">הרשם</a>
+        </h2>
+    </div>
+</div>
+
+<footer>
+    <h3> &copy; Group 9</h3>
+</footer>
+
+</body>
+</html>

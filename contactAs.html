@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>EyeVet</title>
+    <link rel="icon" href="images/eyeLogo.jfif" type="images/1.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
+</head>
+<body>
+<header>
+    <img src="./images/eyeLogo.jfif">
+    <h1>מרפאת עיניים וטרינרית</h1>
+    <a class="signInBtn" href="logIn.html">התחבר עכשיו </a>
+</header>
+<nav>
+    <ul class="nav">
+        <li><a class="navA" href="homePage.html">ראשי</a></li>
+        <li><a class="navA" href="about.html">אודות</a></li>
+        <li><a class="navA" href="services.html">שירותי מרפאה</a></li>
+        <li><a class="navA" href="surgery.html">ניתוחים</a></li>
+        <li><a class="navA" href="Customers_talk.html">לקוחות מדברים</a></li>
+        <li><a class="navA" href="questions.html">שאלות ותשובות</a></li>
+        <li><a class="navA" href="askDoctor.html">התייעצות עם רופא</a></li>
+        <li><a class="navA active" href="contactAs.html">צור קשר</a></li>
+    </ul>
+</nav>
+<div class="main">
+    <div class="images">
+        <img src="images/contact.png">
+    </div>
+    <div class="mapouter"><iframe width="250" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=%D7%90%D7%95%D7%A0%D7%99%D7%91%D7%A8%D7%A1%D7%99%D7%98%D7%AA%20%D7%91%D7%9F%20%D7%92%D7%95%D7%A8%D7%99%D7%95%D7%9F&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-org.net"></a><br></div>
+    <div>
+        <h2>השאירו פרטים וניצור איתכם קשר</h2>
+        <form name="ContactForm" onsubmit="return validateContactForm()" method="post">
+            <div>
+                <label for="fname">שם פרטי</label>
+                <input type="text" id="fname" name="firstname" placeholder="השם שלך.." required>
+                <label for="lname">שם משפחה</label>
+                <input type="text" id="lname" name="lastname" placeholder="שם המשפחה שלך.." required>
+                <label for="phone">טלפון</label>
+                <input type="tel" id="phone" name="phone" placeholder="מספר טלפון שלך..">
+                <label for="email">אימייל</label>
+                <input type="text" id="email" name="email" placeholder="האימייל שלך..">
+                <input type="submit" value="שלח">
+            </div>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <h3> &copy; Group 9</h3>
+</footer>
+
+</body>
+</html>

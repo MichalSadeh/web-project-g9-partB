@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>EyeVet</title>
+    <link rel="icon" href="images/eyeLogo.jfif" type="images/1.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <img src="./images/eyeLogo.jfif">
+    <h1>מרפאת עיניים וטרינרית</h1>
+    <a class="signInBtn" href="logIn.html">התחבר עכשיו </a>
+</header>
+<nav>
+    <ul class="nav">
+        <li><a class="navA" href="homePage.html">ראשי</a></li>
+        <li><a class="navA" href="about.html">אודות</a></li>
+        <li><a class="navA" href="services.html">שירותי מרפאה</a></li>
+        <li><a class="navA" href="surgery.html">ניתוחים</a></li>
+        <li><a class="navA" href="Customers_talk.html">לקוחות מדברים</a></li>
+        <li><a class="navA" href="questions.html">שאלות ותשובות</a></li>
+        <li><a class="navA active" href="askDoctor.html">התייעצות עם רופא</a></li>
+        <li><a class="navA" href="contactAs.html">צור קשר</a></li>
+    </ul>
+</nav>
+<div class="main">
+    <div class="images">
+        <img src="images/askDoctor.png">
+    </div>
+    <div>
+        <br>
+        <h2>התייעץ עם וטרינר</h2>
+        <form action="/">
+            <label for="fsubject">סוג בעל החיים:</label>
+            <select name="fsubject" id="fsubject">
+              <option value="dog">כלב</option>
+              <option value="cat">חתול</option>
+              <option value="horse">סוס</option>
+              <option value="other">אחר</option>
+            </select>
+            <label for="question">פירוט השאלה</label>
+            <textarea id="question" name="question" rows="5" cols="20"></textarea>
+            <input type="submit" value="שלח">
+        </form>
+    </div>
+</div>
+
+<footer>
+    <h3> &copy; Group 9</h3>
+</footer>
+
+</body>
+</html>
